@@ -1,0 +1,114 @@
+---
+title: "Métodos numéricos"
+subtitle: "Implementaciones en R"
+author: "Proyecto Integrador de Aprendizaje"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    code-line-numbers: true
+    code-overflow: wrap
+    scrollable: true
+    transition: none
+execute:
+  echo: true
+  warning: false
+  error: true
+---
+
+## Métodos numéricos
+
+Implementaciones desarrolladas en R.
+
+Esta presentación ejecuta el código durante la generación del HTML con
+Quarto y knitr. Las salidas quedan guardadas dentro del documento.
+
+## Método de Ridders
+
+Encuentra una raíz dentro de un intervalo que contiene un cambio de signo.
+
+```{r}
+#| file: r/Raices/Metodo_Ridders.r
+```
+
+## Método de Laguerre
+
+Calcula raíces de polinomios, incluyendo raíces complejas.
+
+```{r}
+#| file: r/Raices/Metodo_Laguerre.r
+```
+
+## Factorización LDLᵀ
+
+Resuelve un sistema lineal con una matriz simétrica.
+
+```{r}
+#| file: r/Lineales/Factorizacion_LDLT.r
+```
+
+## Reducción cíclica
+
+Resuelve un sistema tridiagonal mediante reducción de ecuaciones.
+
+```{r}
+#| file: r/Lineales/Reduccion_Ciclica.r
+```
+
+## Clenshaw-Curtis
+
+Calcula una integral usando nodos y pesos de Chebyshev.
+
+```{r}
+#| file: r/Integracion/Clenshaw-Curtis.r
+```
+
+## Gauss-Chebyshev
+
+Realiza integración numérica con nodos de Chebyshev de primera especie.
+
+```{r}
+#| file: r/Integracion/Gauss Chebyshev de primera especie.R
+```
+
+## Adams-Bashforth de dos pasos
+
+Resuelve una ecuación diferencial ordinaria usando un paso inicial de
+Runge-Kutta de cuarto orden.
+
+```{r}
+#| file: r/EDO/Adams Bashforth de dos pasos.r
+```
+
+## Predictor-corrector de Hamming
+
+Resuelve una ecuación diferencial ordinaria mediante un método
+predictor-corrector modificado.
+
+```{r}
+#| file: r/EDO/Predictor_corrector_Hamming_modificado.r
+```
+
+## Interpolación de Shepard
+
+Este script solicita puntos y parámetros con `readline()`. Por esa razón
+se muestra aquí sin ejecutarse automáticamente durante la generación.
+
+```{r}
+#| file: r/Interpolacion/Interpolacion_Shepard.r
+#| eval: false
+```
+
+## Spline cúbico natural
+
+Este script solicita los datos mediante `readline()`. Se muestra aquí sin
+ejecutarse automáticamente durante la generación.
+
+```{r}
+#| file: r/Interpolacion/Spline_Cubico_Natural.r
+#| eval: false
+```
+
+## Cierre
+
+El HTML generado contiene el código fuente y las salidas producidas por R.
